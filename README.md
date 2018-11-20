@@ -39,7 +39,7 @@ sudo apt-get install docker.io<br/>
 sudo apt-get install socat<br/>
 sudo apt-get install jq<br/>
 sudo apt-get install curl<br/>
-curl -sL goo.gl/goR2T | bash -<br/>
+curl -sL goo.gl/goR2HT | bash -<br/>
 <br/>
 Boom...Hass-io on a fast virutal machine, no more slow sd card eating Pi's for me!<br/>
 Now is a good time to clone the machine...you can always start it, restore a full snaptshot and be back up in 10 min!<br/>
