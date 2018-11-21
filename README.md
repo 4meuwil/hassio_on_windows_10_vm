@@ -41,7 +41,7 @@ sudo apt-get install jq<br/>
 sudo apt-get install curl<br/>
 curl(space)-sL(space)goo.gl/goR2HT(space)|(space)bash(space)-<br/>
 or if the original site is down I cloned it<br/>
-curl(space)-sL(space)goo.gl/AFPEuZ(space)|(space)bash(space)-(space)<br/>
+curl(space)-sL(space)goo.gl/AFPEuZ(space)|(space)bash(space)-<br/>
 (space) shown to help formatting, don't actually type it<br/>
 <br/>
 Boom...Hass-io on a fast virutal machine, no more slow sd card eating Pi's for me!<br/>
