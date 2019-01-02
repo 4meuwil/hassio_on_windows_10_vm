@@ -10,7 +10,7 @@ name: mint<br/>
 type: linux<br/>
 version: ubuntu(64bit)<br/> 
 Create<br/>
-memory - 1024mb<br/>
+memory - 2048mb<br/>
 create a virtual hard disc now<br/>
 VirtualBoxDiscImage<br/>
 Fixed Size<br/>
