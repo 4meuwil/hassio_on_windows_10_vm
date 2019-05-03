@@ -5,23 +5,16 @@ export IP="$(hostname -I | sed -e 's/[[:space:]]*$//')"
 
 echo -e "####################\nYour IP address is: \n# $IP\n####################"
 
-sudo apt-get update
+sudo -i
 
-sudo apt-get install -y socat jq avahi-daemon apt-transport-https ca-certificates software-properties-common
+add-apt-repository universe
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+apt-get update
 
-sudo apt-key fingerprint 0eBFCD88
+apt-get install -y apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager socat software-properties-common
 
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+curl -sSL https://get.docker.com | sh
 
-sudo apt-get update
-
-sudo apt-get install -y docker-ce
-
-curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/install/hassio_install | sudo bash -
+curl -sL "https://raw.githubusercontent.com/home-assistant/hassio-installer/master/hassio_install.sh" | bash -s
 
 echo -e "\nSuccess! go to\n\nhttp://$IP:8123\n"
