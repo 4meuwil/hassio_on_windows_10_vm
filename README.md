@@ -34,15 +34,7 @@ Once it's done, it will reboot (press a key, it already removed the disc for you
 Go to terminal (black square in bottom left tool bar) and enter these commands:<br/>
 sudo su<br/>
 -enter your root pass-<br/>
-sudu apt-get update<br/>
-sudo apt-get install docker.io<br/>
-sudo apt-get install socat<br/>
-sudo apt-get install jq<br/>
-sudo apt-get install curl<br/>
-curl(space)-sL(space)goo.gl/goR2HT(space)|(space)bash(space)-<br/>
-or if the original site is down I cloned it<br/>
-curl(space)-sL(space)goo.gl/AFPEuZ(space)|(space)bash(space)-<br/>
-(space) shown to help formatting, don't actually type it<br/>
+curl -sL goo.gl/AFPEuZ | bash -<br/>
 <br/>
 Boom...Hass-io on a fast virutal machine, no more slow sd card eating Pi's for me!<br/>
 Now is a good time to clone the machine...you can always start it, restore a full snaptshot and be back up in 10 min!<br/>
